@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head itemscope itemtype="http://schema.org/WebSite">
+
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>slbmax!</title>
+      <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="./default.css">
+
+    </head>
+
+    <body>
+
+        <div class="greeting">Welcome to my page!</div>
+        <div class="intro">Make some requests to get info about me</div>
+        
+        <div class="content">
+            <div class="info">
+
+    <pre class="json" id="info1">
+    {	
+      "<span class="string">name</span>": "<span class="string">Max</span>",
+      "<span class="string">surname</span>": "<span class="string">Slobodzian</span>",
+      "<span class="string">birthday_date</span>": <span class="int">1046383200</span>,
+      "<span class="string">education</span>": [
+        {
+          "<span class="string">name</span>": "<span class="string">NTUU \"Igor Sikorsky KPI\"</span>",
+          "<span class="string">faculty</span>": "<span class="string">FAM</span>",
+          "<span class="string">speciality</span>": "<span class="string">Software engineer</span>",
+          "<span class="string">enrollment_date</span>": <span class="int">1598907600</span>,
+          "<span class="string">graduation_date</span>": <span class="null">null</span>,
+          "<span class="string">city</span>": "<span class="string">Kyiv</span>",
+          "<span class="string">country</span>": "<span class="string">Ukraine</span>",
+        }
+      ],
+      "<span class="string">experience</span>": [
+        {
+          "<span class="string">company</span>": "<span class="string">Distributed Lab</span>",
+          "<span class="string">position</span>": "<span class="string">Backend Golang developer</span>",
+          "<span class="string">employment_date</span>": <span class="int">1654030800</span>,
+          "<span class="string">firing_date</span>": <span class="null">null</span>,
+          "<span class="string">city</span>": "<span class="string">Kyiv</span>",
+          "<span class="string">country</span>": "<span class="string">Ukraine</span>",
+        }
+      ],
+      "<span class="string">likes</span>": [
+        "<span class="string">eat</span>",
+        "<span class="string">code</span>",
+        "<span class="string">sleep</span>",
+      ],
+      "<span class="string">learns</span>": [
+        "<span class="string">golang</span>",
+        "<span class="string">solidity</span>",
+        "<span class="string">rust</span>",
+        "<span class="string">python</span>",
+      ],
+      "<span class="string">networks</span>": [
+        "<span class="string">email</span>": "<a class="link" href="mailto:slobodzian.maxim@gmail.com">slobodzian.maxim@gmail.com</a>",
+        "<span class="string">github</span>": "<a class="link" href="https://github.com/slbmax">@slbmax</a>",
+        "<span class="string">telegram</span>": "<a class="link" href="https://telegram.me/slbmax">@slbmax</a>",
+      ]
+    }
+    </pre> 
+
+    <pre class="json" id="info2">
+    {
+      "<span class="string">projects</span>": [
+        {
+          "<span class="string">id</span>": <span class="int">1</span>,
+          "<span class="string">title</span>": "<span class="string">pocketbook-telegram-bot</span>",
+          "<span class="string">description</span>": "<span class="string">simple bot for notes</span>",
+          "<span class="string">status</span>": "<span class="string">STATUS_FINE</span>",
+        },
+        {
+          "<span class="string">id</span>": <span class="int">2</span>,
+          "<span class="string">title</span>": "<span class="string">E-database of films and actors</span>",
+          "<span class="string">description</span>": "<span class="string">coursework</span>",
+          "<span class="string">status</span>": "<span class="string">STATUS_FINE</span>",
+        },
+        {
+          "<span class="string">id</span>": <span class="int">3</span>,
+          "<span class="string">title</span>": "<span class="string">CafEasy</span>",
+          "<span class="string">description</span>": "<span class="string">simple startup</span>",
+          "<span class="string">status</span>": "<span class="string">STATUS_PENDING</span>",
+        },
+        {
+          "<span class="string">id</span>": <span class="int">4</span>,
+          "<span class="string">title</span>": "<span class="string">WarMax</span>",
+          "<span class="string">description</span>": "<span class="string">coursework, console game</span>",
+          "<span class="string">status</span>": "<span class="string">STATUS_FINE</span>",
+        },
+        {
+          "<span class="string">id</span>": <span class="int">5</span>,
+          "<span class="string">title</span>": "<span class="string">TikTok game</span>",
+          "<span class="string">description</span>": "<span class="string">interactive game for streams</span>",
+          "<span class="string">status</span>": "<span class="string">STATUS_CRINGE</span>",
+        }
+      ]
+    }</pre>
+            </div>
+
+            <div class="buttons">
+                
+                <a href="#" class="apibutton" onclick="OpenInfo()">slbmax/info</a>
+                <a href="#" class="apibutton" onclick="OpenProjects()">slbmax/projects</a>
+                <a href="#" class="apibutton" onclick="LoadRandomPhoto()">slbmax/randphoto</a>
+                <a href="#" class="apibutton" onclick="OpenExpectations()">slbmax/expectations</a>
+
+                <img src="./images/animation.gif" class="animation">
+
+                <span class="expectations expbasic text-hidden">I just want to learn basics about how frontend works and communicates with backend</span>
+                <span class="expectations expadditional text-hidden-slow">&#128520; and try to survive this term &#128520;</span>
+                
+            </div>
+
+            <div class="image">
+                <img src="" class="img" id="mypic">
+            </div>
+            
+        </div>
+        <script src="./app.js"> </script>
+    </body>
+
+</html>
